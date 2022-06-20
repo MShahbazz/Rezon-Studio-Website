@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezon Studio</title>
+
+
+
+
+  <!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- iconify -->
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+
+
+  <!-- Rezon stylesheet  -->
+  <link rel="stylesheet" href="style.css">
+
+
+<!-- Script  -->
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="main-section ">
+
+   
+    <div class="cnt">
+
+      <!-- navbar  -->
+      <div class="nav-sm">
+          <!-- <div class="logo">
+            MUHAMMAD
+            <span> SHAHBAZ </span>
+          </div> -->
+
+          <div class="logo d-md-none d-block">
+              <img src="images/Logo-84px.png" alt="">
+              <!-- <img src="images/Group.png" alt=""> -->
+          </div>
+
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <!-- <a href="">Work</a> -->
+                  <a href="about.html">About</a>
+                  <a href="contact-.html">
+                      <div class="btn-box">
+                          <button class="contact-btn" type="submit">
+                              CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                  data-height="20"></span>
+                          </button>
+                      </div>
+                  </a>
+
+                  <div class="social-icons">
+                      <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+                      <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+                      <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                  </div>
+
+              </div>
+          </div>
+          <span style="font-size:34px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      </div>
+
+      <nav class="d-flex justify-content-between ">
+
+          <!-- #issue-1 
+        Check this on different screen size,
+      working fine on chrome - tab screen  -->
+
+          <div class="logo d-md-block d-none">
+              <img src="images/Logo-84px.png" alt="">
+              <!-- <img src="images/Group.png" alt=""> -->
+          </div>
+
+
+
+
+          <div class="menu ">
+              <ul class="navbar nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact-section"> <button> Contact us <span class="iconify"
+                                  data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+                          </button></a>
+                  </li>
+
+              </ul>
+          </div>
+      </nav>
+  </div>
+
+    <div class="cnt">
+
+      <!-- navbar  -->
+
+   
+
+      <!-- hero section  -->
+      <main>
+        <div class="row pb-4">
+          <div class="hero-text col-md-6 col-12">
+            <h1>We, with our strategic thinking, create brands and websites that <span>get you ahead.</span></h1>
+
+
+            <div class="btn-box">
+              <a class="" href="#contact-section"> <button class="contact-btn"> Contact us <span class="iconify"
+                    data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+                </button></a>
+            </div>
+
+
+
+
+
+            <!-- testimonial section in hero  -->
+
+            <div class="small-testimony-box">
+
+              <div class="testimony-text">
+                "resulted in brilliant ideas ..."
+              </div>
+
+
+              <div class="testimony-stars">
+                <span class="iconify" data-icon="emojione:star"></span><span class="iconify"
+                  data-icon="emojione:star"></span><span class="iconify" data-icon="emojione:star"></span><span
+                  class="iconify" data-icon="emojione:star"></span><span class="iconify"
+                  data-icon="emojione:star"></span>
+              </div>
+
+              <div class="testimony-name">
+                Arif Sidharta
+              </div>
+
+              <div class="testimony-designation">
+                CEO of Bedabeda
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-end">
+            <!-- Showcase Gif/Image for tablets and greater than tabs size  -->
+            <img class="d-none d-md-block" src="images/showcase.png" alt="">
+
+            <!-- Showcase Gif/Image for mobile screen -->
+            <div class="showcase-box d-block d-md-none">
+              <img src="images/mobile-hero-img.png" alt="">
+            </div>
+
+
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+
+
+  <div class="value-section">
+    <div class="cnt row">
+      <div class="value-box">
+
+        <img src="images/value-1.png" alt="">
+        <h3>Gives You Confidence</h3>
+
+        <p>Be ready to win the world knowing that your brand and website really work and are up to the mark</p>
+
+      </div>
+
+      <div class="separator">
+        <img src="images/separator.png" alt="">
+      </div>
+
+      <div class="separator-md ">
+        <img src="images/separator-md.png" alt="">
+      </div>
+
+
+
+      <div class="value-box">
+
+        <img src="images/value-2.png" alt="">
+        <h3>Especially Made For You</h3>
+
+        <p>Design that you can say is your own, which expresses you and your values in the most perfect way.</p>
+
+      </div>
+
+      <div class="separator">
+        <img src="images/separator.png" alt="">
+      </div>
+      <div class="separator-md ">
+        <img src="images/separator-md.png" alt="">
+      </div>
+
+
+      <div class="value-box">
+
+        <img src="images/value-3.png" alt="">
+        <h3>Raises Your Value</h3>
+
+        <p>Unique design strategies that raise the value of your brand and help you become the market leader.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="stake-section">
+    <div class="cnt d-md-flex justify-content-evenly">
+      <div class="col-md-5 col-12 text-md-start text-center">
+        <h1>Do you Feel overwhelmed when growing online?</h1>
+      </div>
+
+      <div class="stake-outer-box col-lg-5 col-md-6 col-12">
+
+        <div class="stake-box w-100">
+          <div class="cross">
+            <img src="images/cross.png" alt="">
+          </div>
+          <div class="stake-text">
+            <h3>No Sales</h3>
+            <p>Your product is great but you are worried why it’s not getting the online sale you want.</p>
+          </div>
+        </div>
+
+        <div class="stake-box w-100">
+          <div class="cross" id="cross-2">
+            <img src="images/cross.png" alt="">
+          </div>
+          <div class="stake-text ">
+            <h3>Fear of losing the business</h3>
+            <p>
+              You understand putting yourself is the most important thing you need to do, but don’t know how to keep up
+              with different kinds of tech trends. </p>
+          </div>
+        </div>
+
+
+        <div class="stake-box w-100">
+          <div class="cross" id="cross-3">
+            <img src="images/cross.png" alt="">
+          </div>
+          <div class="stake-text ">
+            <h3>Looking like everyone</h3>
+            <p>You tried doing something for your brand or website or hired someone but it looks and sounds like
+              everyone, causing you to blend in, becoming one more company or brand and instead of standing out, and
+              becoming the favorite go-to brand.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="line-border d-block d-md-none"> </div>
+
+
+  <div class="solution-section">
+    <div class="cnt">
+
+      <!-- Soulution h3 and p  -->
+      <div class="row">
+        <div class="sol-text col-xl-6 mx-auto col-md-8 col-10 text-center">
+          <h1>Lets us help you to</h1>
+          <p>We get it putting yourself online is hard and doing it while managing your business is just too much, but
+            it
+            shouldn’t be and we are here to help you -</p>
+        </div>
+      </div>
+      <!-- tiles row  -->
+      <div class="tiles row w-100">
+
+        <div class="col-xl-4 col-md-8 col-12 ">
+          <div class="sol-tile">
+            <div class="sol-box">
+              <img src="images/solution-1.png" alt="">
+              <div class="sol-tile-text">
+                <h3>Get Sales</h3>
+                <p>Get websites and brand identity that works. Gimmick-free to achieve the end goal. Growing instead of
+                  competing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-xl-4 col-md-8 col-12 my-md-4 my-xl-auto">
+          <div class="sol-tile">
+
+            <div class="sol-box">
+              <img src="images/solution-2.png" alt="">
+              <div class="sol-tile-text">
+                <h3>Gain Recognition</h3>
+                <p>The sales and the brand recognition you wanted with well-planned strategies. Your great product or
+                  idea
+                  meets our great way of presenting it.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-4 col-md-8 col-12 ">
+          <div class="sol-tile">
+
+            <div class="sol-box">
+              <img src="images/solution-3.png" alt="">
+              <div class="sol-tile-text">
+                <h3>Stand out</h3>
+                <p>Websites and Brands that you’ll be proud to own and show the world. Designs that will speak for your
+                  business.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="btn-box text-center">
+        <a class="" href="#contact-section"> <button class="contact-btn"> Contact us <span class="iconify"
+              data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+          </button></a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Testimonials  -->
+
+  <div class="test-section">
+    <div class="cnt">
+      <h1 class="text-center">What our clients saying about us?</h1>
+
+      <div class="row">
+        <div class="col">
+          <div class="test-box ">
+
+            <div class="">
+              <div class="test-heading
+          ">
+                Great coordination
+              </div>
+              <p>
+                “Would recommend Muhammad for your logo design requirements! Appreciate for Muhammad taking the time to
+                understand our start-up and our mission which resulted in brilliant ideas. Great coordination, swift
+                turnaround, and outstanding delivery!”
+              </p>
+            </div>
+            <div class="test-profile d-flex">
+              <img src="images/profile-1.jpg" alt="">
+
+              <div class="profile-text">
+                <div class="testimony-name">
+                  Arif Sidharta
+                </div>
+
+                <div class="testimony-designation">
+                  CEO of Bedabeda
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="spacer col-1"></div>
+        <div class="col">
+          <div class="test-box bg-white">
+
+            <div class="">
+              <div class="test-heading
+          ">
+                Mindblowing
+              </div>
+              <p>
+                "Blaccko clothing is really happy the work done by Sarfaraz.He did the same thing with logo and insta
+                icons what we want and interpret to him , we really appreciate his design and work quality. He delivered
+                his work in very less time which really help us. We are very happy to work with Sarfaraz"
+              </p>
+            </div>
+            <div class="test-profile d-flex">
+              <img src="images/profile-1.jpg" alt="">
+
+              <div class="profile-text">
+                <div class="testimony-name">
+                  Rahul Mathur
+                </div>
+
+                <div class="testimony-designation">
+                  Co-founder of Blackko Clothing </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <div class="service-section">
+    <div class="cnt">
+      <div class="row">
+        <div class="col-12 col-md-4 sticky-box">
+          <h1>What we do?</h1>
+          <div class="btn-box d-none d-md-block">
+            <a class="" href="#contact-section"> <button class="contact-btn"> Contact us <span class="iconify"
+                  data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+              </button></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-2 d-none d-md-block"></div>
+
+        <div class="col-12 col-xl-5 col-md-6">
+
+          <!-- Brand Identity Tile  -->
+          <div class="service-tile">
+
+            <div class="heading-box d2">
+              Brand Identity
+
+              <span class="iconify" data-icon="fluent:arrow-right-48-filled"></span>
+
+            </div>
+
+            <div class="serv-box">
+              Logo <br>
+              Logo Usage Guidlines <br>
+              Typography <br>
+              Colors <br>
+              Style Guide <br>
+              Stationary Designs <br>
+              Packaging <br>
+
+            </div>
+
+          </div>
+
+          <!-- Website Development tile  -->
+
+          <div class="service-tile mt-4">
+
+            <div class="heading-box d2">
+              Website Development
+
+              <span class="iconify" data-icon="fluent:arrow-right-48-filled"></span>
+
+            </div>
+
+            <div class="serv-box">
+              Logo <br>
+              Logo Usage Guidlines <br>
+              Typography <br>
+              Colors <br>
+              Style Guide <br>
+              Stationary Designs <br>
+              Packaging <br>
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+        <div class="btn-box d-md-none text-center">
+          <a class="" href="#contact-section"> <button class="contact-btn"> Contact us <span class="iconify"
+                data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+            </button></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Process Plan  -->
+  <div class="plan-section">
+    <div class="cnt">
+      <div class="row">
+        <div class="col-12 text-center ">
+          <h1 class="text-white"> How to start working with us? </h1>
+        </div>
+
+        <div class="process-plan row">
+          <div class="col-12 col-md-8 col-xl-4">
+
+            <div class="sol-tile">
+
+              <div class="sol-box">
+                <img src="images/01.png" alt="">
+                <div class="sol-tile-text">
+                  <h3>Drop a message</h3>
+                  <p>Send a message to get things started using the contact us button. Then we will get back to you to
+                    know about you and your business/brand.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 d-block d-xl-none h-spacer">
+
+          </div>
+
+          <div class="col-12 col-md-8 col-xl-4">
+
+            <div class="sol-tile">
+
+              <div class="sol-box">
+                <img src="images/02.png" alt="">
+                <div class="sol-tile-text">
+                  <h3>We discover and plan</h3>
+                  <p>After our discussion, we will create a customized plan, strategy, and begin working towards
+                    achieving it.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 d-block d-xl-none h-spacer">
+
+          </div>
+
+          <div class="col-12 col-md-8 col-xl-4">
+
+            <div class="sol-tile">
+
+              <div class="sol-box">
+                <img src="images/03.png" alt="">
+                <div class="sol-tile-text">
+                  <h3>Get the results</h3>
+                  <p>We create and deliver the project by keeping you updated with every step.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="btn-box text-center">
+          <a class="" href="#contact-section"> <button class="contact-btn"> Contact us <span class="iconify"
+                data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+            </button></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact us  -->
+
+  <div class="contact-section" id="contact-section">
+    <div class="cnt">
+
+      <div class="form-heading mx-auto text-center">
+        <h1> Contact us </h1>
+        <p>We’ll send you an email reply within 2 business days with some questions to get both of us started.</p>
+      </div>
+
+      <form action="">
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-12">
+            <label for="">
+              First Name
+            </label>
+            <input type="text" name="" id="" placeholder="Rahul">
+          </div>
+
+          <div class="col-xl-4 col-md-6 col-12">
+            <label for="">
+              Last Name
+            </label>
+            <input type="text" name="" id="" placeholder="Sharma">
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-12">
+            <label for="">
+              Email
+            </label>
+            <input type="text" name="" id="" placeholder="Your email address">
+          </div>
+
+          <div class="col-xl-4 col-md-6 d-none d-md-block">
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-8 col-12">
+            <label for="">
+              Tell us about your business and what you’re looking for help with. *
+            </label>
+            <input type="text" name="" id=""
+              placeholder="Explain briefly about your bussiness, industry and problems you facing.">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-12">
+            <label for="">
+              How did you find Rezon Studio?
+            </label>
+            <input type="text" name="" id="" placeholder="Social media, website, word of mouth etc.">
+          </div>
+
+          <div class="col-xl-4 col-md-6 d-none d-md-block">
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="btn-box text-center">
+            <button class="contact-btn" type="submit">
+              SEND <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+            </button>
+          </div>
+        </div>
+
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- line  -->
+  <div class="line-border d-block d-md-none"> </div>
+
+  <!-- FAQs  -->
+
+  <div class="faq-section">
+    <div class="cnt">
+
+      <div class="faq-heading mx-auto text-center">
+        <h1> Frequently Asked Questions</h1>
+      </div>
+
+
+
+      <div class="collapse-box col-xl-10 col-12">
+        <h3 class="collapsible w-100 d-flex">
+          <div class="col-1"> 01. </div>
+          <div class="col">How Long Will It Take To Complete My Project?</div>
+        </h3>
+        <div class="content">
+          <div class="d-flex">
+            <div class="col-1"></div>
+            <div class="col">
+              <p class="ml-5">It depends on the size and nature of the project. While some projects take 2-3 weeks,
+                others take 1-2 months and some take longer than that.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse-box col-xl-10 col-12">
+        <h3 class="collapsible w-100 d-flex">
+          <div class="col-1"> 02. </div>
+          <div class="col">Do you redesign/revamp existing websites and brands?</div>
+        </h3>
+        <div class="content">
+          <div class="d-flex">
+            <div class="col-1"></div>
+            <div class="col">
+              <p class="ml-5">Yeah, why not! We love to re-alive a brand or website by putting strategic design thinking
+                into it which
+                includes researching about your/your and audience, writing human-understandable copy, and creating
+                unique
+                designs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse-box col-xl-10 col-12">
+        <h3 class="collapsible w-100 d-flex">
+          <div class="col-1"> 03. </div>
+          <div class="col">Do You Work With Local or International Clients?</div>
+        </h3>
+        <div class="content">
+          <div class="d-flex">
+            <div class="col-1"></div>
+            <div class="col">
+              <p class="ml-5">Both. International clients make up the majority of our clients. Email, Skype, WhatsApp,
+                etc. are the
+                tools used to keep them updated during the process of the project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse-box col-xl-10 col-12">
+        <h3 class="collapsible w-100 d-flex">
+          <div class="col-1"> 04. </div>
+          <div class="col">Let's say that I only need a logo or a website design, but not all of your
+            services. Can you do it for me?</div>
+        </h3>
+        <div class="content">
+          <div class="d-flex">
+            <div class="col-1"></div>
+            <div class="col">
+              <p class="ml-5">Yes. Everything you see in our brand and website services can be provided alone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse-box col-xl-10 col-12">
+        <h3 class="collapsible w-100 d-flex">
+          <div class="col-1"> 05. </div>
+          <div class="col">Ah, hmm..my question is not here.</div>
+        </h3>
+        <div class="content">
+          <div class="d-flex">
+            <div class="col-1"></div>
+            <div class="col">
+              <p class="ml-5">Don't worry, we'll answer any questions you have here. We will get back to you within one
+                day or sometimes faster.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+
+    <div class="wrapper">
+
+      <div class="cnt d-flex text-white">
+
+        <div class="footer-logo-box col-* col-md-4 col-xl-3">
+          <div class="footer-logo">
+            <img src="images/Logo.png" alt="">
+          </div>
+
+          <div class="contact-us-box d-md-none">
+            <div class="contact-text">
+              <p> Any Project? Reach out to our team at hello@rezon.com</p>
+            </div>
+
+            <div class="btn-box">
+             <a href="#contact-section"> <button class="contact-btn" type="submit">
+                CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                  data-height="20"></span>
+              </button>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="social-icons d-xl-none">
+            <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+            <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+            <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+          </div>
+
+
+        </div>
+
+        <div class="footer-nav col-6 col-md-4 col-xl-3 text-white">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>Work</li> -->
+            <li><a href="About.html">About</a></li>
+            <li><a href="index.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact d-none d-md-block col-md-4 col-xl-3 text-white">
+          <div class="contact-us-box">
+            <div class="contact-text">
+              <p> Any Project? Reach out to our team at hello@rezon.com</p>
+            </div>
+
+            <div class="btn-box">
+          <a href="#contact-section">    <button class="contact-btn" type="submit">
+                CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                  data-height="20"></span>
+              </button>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer-social d-none d-xl-block col-xl-3 d-none text-white">
+          <div class="social-text"> Follow us to get daily dose of inpiration and strategies to grow and amplify your
+            brand.</div>
+          <div class="social-icons">
+            <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+            <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+            <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="copyright cnt row">
+        <div class="col-12">
+          <div class="text-center">
+            © 2021 Rezon Studio. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+  <!-- Faqs Script -->
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("faq-active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+
+  <!-- Bootstrap bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

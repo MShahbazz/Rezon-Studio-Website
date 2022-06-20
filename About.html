@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezon Studio</title>
+
+
+
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+
+    <!-- <script src="script.js"></script> -->
+
+    <!-- Rezon stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .highlight {
+            background-repeat: no-repeat;
+            display: inline;
+            padding: 0px 6px;
+            animation: textbg normal forwards;
+            animation-delay: 800ms;
+            animation-duration: 900ms;
+            transition: 0.5s cubic-bezier(1, 0.16, 0.34, 0.74);
+        }
+
+        @keyframes textbg {
+            from {
+                color: #21383E;
+                background-size: 0;
+                background-image: linear-gradient(transparent calc(0% - 0px), #21383E 0px);
+                /* background-image: linear-gradient(transparent calc(0% - 0px), #21383E 100px); */
+                /* background-color: #07c400; */
+            }
+
+            to {
+                color: #ffff;
+                background-size: 100%;
+                background-image: linear-gradient(transparent calc(0% - 5px), #21383E 0px);
+                /* background-color: #ebcd4b; */
+            }
+        }
+
+        @keyframes text-white {
+            from {
+                color: #21383E;
+            }
+
+            to {
+                color: #ffff;
+                /* background-color: #ebcd4b; */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="cnt">
+
+        <!-- navbar  -->
+        <div class="nav-sm">
+            <!-- <div class="logo">
+              MUHAMMAD
+              <span> SHAHBAZ </span>
+            </div> -->
+
+            <div class="logo d-md-none d-block">
+                <img src="images/Logo-84px.png" alt="">
+                <!-- <img src="images/Group.png" alt=""> -->
+            </div>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <!-- <a href="#">Work</a> -->
+                    <a href="about.html">About</a>
+                    <!-- <a class="nav-link contact-btn" href="#"> <button> Contact us <span class="iconify"
+                                data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+                        </button>
+                    </a> -->
+
+                    <a href="contact.html">
+                        <div class="btn-box">
+                            <button class="contact-btn" type="submit">
+                                CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                    data-height="20"></span>
+                            </button>
+                        </div>
+                    </a>
+
+                    <div class="social-icons">
+                        <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+                        <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+                        <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                    </div>
+
+                </div>
+            </div>
+            <span style="font-size:34px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+
+        <nav class="d-flex justify-content-between ">
+
+            <!-- #issue-1 
+          Check this on different screen size,
+        working fine on chrome - tab screen  -->
+
+            <div class="logo d-md-block d-none">
+                <img src="images/Logo-84px.png" alt="">
+                <!-- <img src="images/Group.png" alt=""> -->
+            </div>
+
+
+
+
+            <div class="menu ">
+                <ul class="navbar nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"> <button> Contact us <span class="iconify"
+                                    data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+                            </button></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="about-heading-box cnt ">
+        <div class="row">
+            <div class="col-xl-10 col-12 text-center mx-auto">
+
+                <h1 class="d-none d-xl-block">We believe there is a <span class="highlight" id="highlight">purpose for
+                        everything</span>, so
+                    why<br>should
+                    your
+                    branding or website be any
+                    different.
+                </h1>
+
+                <h1 class=" d-xl-none">We believe there is a <span class="highlight" id="highlight">purpose for
+                        everything</span>, so
+                    why should
+                    your
+                    branding or website be any
+                    different.
+                </h1>
+
+
+
+                <h1 class="text-animated">This is our why <span class="hyphen">-------</span>
+
+                    <span class="next-line d-block d-md-none"><br></span>
+
+                    <span class="animate-line">
+                        to
+                        <span id="child-1">create</span>
+                        <span id="child-2">designs</span>
+                        <span id="child-3">with</span>
+                        <span id="child-4">intent.</span>
+                    </span>
+                </h1>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </div>
+
+
+
+    <div class="cnt">
+
+        <!-- Rezon Story section  -->
+
+        <div class="rezon-story-section">
+
+            <div class="row">
+
+                <div class="col-12 col-md-4 col-xl-6 image-box d-flex flex-row flex-md-column flex-xl-row">
+
+                    <img src="images/story-1.jpg" alt="">
+
+                    <img src="images/story-2.jpg" alt="">
+
+                </div>
+
+                <div class="col-12 col-md-8 col-xl-6 ">
+                    <h1 class="text-center text-md-start">
+                        The Rezon Story
+                    </h1>
+                    <p>
+                        Like any great story starts with a tragedy, this is ours. We were and are tired of seeing brands
+                        and
+                        websites that just look rip off each other, trying to be the new apple or any other popular
+                        brand.
+                    </p>
+
+                    <p>
+                        Seeing design agencies that just either creating copy-paste designs or on other extremes
+                        creating
+                        fancy
+                        cool looking stuff just for the sake of looking fancy with little to no actual value without
+                        understanding about your need and problems and complete disregard to your audience.
+                    </p>
+
+                    <p>
+                        To change this Rezon studio is born. We want people to be original by helping them put their
+                        original
+                        selves out there and speaking to their audience in ‘their language’. We want people to own their
+                        story
+                        instead of narrating someone else, and having brands and websites that really convey what they
+                        mean
+                        to
+                        their valuable audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rezon Name Section  -->
+        <div class="rezon-name-section row 
+   gx-0">
+
+            <div class="col-12 col-md-8 ">
+
+                <div class="text-box">
+                    <h1>
+                        How Rezon got its name?
+                    </h1>
+
+                    <div class="para-box">
+                        <p>
+                            <!-- <img src="images/question-mark.png" alt=""> -->
+
+                            Rezon is a misspelling of the word reason. We knew who we are, and we want the world to
+                            know
+                            us by the same. And what could be better than ‘Rezon’ for a brand (us) that is driven by
+                            reasoning and purpose.
+
+                        </p>
+
+                        <div class="q-mark-sm">
+                            <img src="images/question-mark.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="q-mark">
+                        <img src="images/question-mark.png" alt="">
+                    </div>
+
+                </div>
+
+                <!-- <div class="q-mark">
+                    <img src="images/question-mark.png" alt="">
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="we-work-with-section">
+        <div class="cnt">
+            <div class="row">
+
+                <h1 class="text-center">Who we work with?</h1>
+                <div class="image-box col-xl-8 col-12 mx-auto d-flex">
+
+                    <div class="business text-center">
+                        <img src="images/audience.jpg" alt="">
+                        <h5>Small Businesses</h5>
+                    </div>
+
+                    <div class="business text-center">
+                        <img src="images/audience-1.jpg" alt="">
+                        <h5>Startups</h5>
+                    </div>
+
+                    <div class="business text-center">
+                        <img src="images/audience-2.jpg" alt="">
+                        <h5>Personal Branding</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="founder-section">
+        <h1 class="text-center d-xl-none ">Behind the Rezon Studio</h1>
+        <div class="cnt d-block d-xl-flex ">
+
+
+            <div class="row gx-xl-5">
+
+                <div class="col-xl-4 d-none d-xl-block text-left">
+                    <h1>Behind the Rezon Studio</h1>
+                </div>
+
+
+                <div class="founder-box-1 col-12 col-md-6 col-xl-4 ">
+                    <div class="d-flex flex-md-column">
+                        <div class="founder-img col-4  col-md-auto">
+                            <img class="w-100" src="images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="founder-text-box col-8 col-md-auto">
+                            <div class="name-box">
+                                <div class="d6">
+                                    Muhammad Shahbaz
+                                </div>
+                                <div class="founder-desg">
+                                    Co-founder of Rezon Studio
+                                </div>
+                            </div>
+
+                            <p id="shrinkMe" class="shrinkable">
+                                Shahbaz after getting a CS degree went into brand strategy and web development, wanted
+                                to
+                                build
+                                something meaningful, and producing things that matter Rezon studio is a product of
+                                that.
+                                When
+                                he’s not doing whiteboard sessions with clients or coding, he most likely can be found
+                                reading
+                                psychology books, teaching, or enjoying his favorite - cup of tea.
+
+                                <!-- Sarfaraz tried a lot of things in design and development and created illustrations and designs for fun before moving into serious design work for clients. Doing detailed research and being his own biggest critic helps him greatly to produce designs that just in plain language look stunning. When he is not being harsh on himself, you can find him playing with cats or trying to lift the heaviest weight in the gym. -->
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="founder-box-2 col-12 col-md-6 col-xl-4 d-flex flex-xl-column">
+                    <div class="d-flex flex-md-column">
+                        <div class="founder-img col-4 col-md-auto">
+                            <img class="w-100" src="images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="founder-text-box">
+                            <div class="name-box">
+                                <div class="d6">
+                                    Muhammad Sarfaraz
+                                </div>
+                                <div class="founder-desg">
+                                    Co-founder of Rezon Studio
+                                </div>
+                            </div>
+
+                            <p id="shrinkMe2" class="shrinkable">
+                                Shahbaz after getting a CS degree went into brand strategy and web development, wanted
+                                to build
+                                something meaningful, and producing things that matter Rezon studio is a product of
+                                that. When
+                                he’s not doing whiteboard sessions with clients or coding, he most likely can be found
+                                reading
+                                psychology books, teaching, or enjoying his favorite - cup of tea.
+
+                                <!-- Sarfaraz tried a lot of things in design and development and created illustrations and designs for fun before moving into serious design work for clients. Doing detailed research and being his own biggest critic helps him greatly to produce designs that just in plain language look stunning. When he is not being harsh on himself, you can find him playing with cats or trying to lift the heaviest weight in the gym. -->
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="founder-quote-section">
+        <div class="cnt">
+            <div class="row">
+                <div class="col-12 col-xl-8 mx-auto">
+                    <h5>
+                        In a world where new brands and websites are created every minute as we speak, being the same
+                        and becoming part of the noise is not an option. And when you are trying to lead by being
+                        authentic and owning your story you deserve well-planned designs that separate you from the
+                        rest.
+                    </h5>
+
+                    <div class="founder-name">
+                        <span><img src="images/hyphen-founder.png" alt=""></span>
+                        Muhammad Shahbaz</div>
+                    <div class="founder-desg"> Founder of Rezon Studio </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cnt ready-contact-section text-center">
+
+        <div class="grey-box">
+            <h1>
+                Ready to start working with us?
+            </h1>
+
+            <div class="btn-box text-center">
+                <a class="" href="contact.html"> <button class="contact-btn"> Contact us <span class="iconify"
+                            data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+                    </button></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+        <div class="wrapper">
+
+            <div class="cnt d-flex text-white">
+
+                <div class="footer-logo-box col-* col-md-4 col-xl-3">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="">
+                    </div>
+
+                    <div class="contact-us-box d-md-none">
+                        <div class="contact-text">
+                            <p> Any Project? Reach out to our team at hello@rezon.com</p>
+                        </div>
+
+                        <div class="btn-box">
+                            <a href="contact.html"> <button class="contact-btn" type="submit">
+                                    CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                        data-height="20"></span>
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="social-icons d-xl-none">
+                        <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+                        <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+                        <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Working here - a is having its decoration -->
+
+                <div class="footer-nav col-6 col-md-4 col-xl-3 text-white">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!-- <li>Work</li> -->
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact d-none d-md-block col-md-4 col-xl-3 text-white">
+                    <div class="contact-us-box">
+                        <div class="contact-text">
+                            <p> Any Project? Reach out to our team at hello@rezon.com</p>
+                        </div>
+
+                        <div class="btn-box">
+                            <a href="contact.html"> <button class="contact-btn" type="submit">
+                                    CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                        data-height="20"></span>
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-social d-none d-xl-block col-xl-3 d-none text-white">
+                    <div class="social-text"> Follow us to get daily dose of inpiration and strategies to grow and
+                        amplify your
+                        brand.</div>
+                    <div class="social-icons">
+                        <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+                        <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+                        <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright cnt row">
+                <div class="col-12">
+                    <div class="text-center">
+                        © 2021 Rezon Studio. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        // Navbar 
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+
+
+        // About us page variable animation 
+
+        const highlight = document.getElementById('highlight');
+
+        const child1 = document.getElementById('child-1');
+        const child2 = document.getElementById('child-2');
+        const child3 = document.getElementById('child-3');
+        const child4 = document.getElementById('child-4');
+
+        //time intervals in Why Animation
+        const interval = 500;
+
+
+        highlight.addEventListener("animationend", () => {
+            // console.log('Highligh Animation Ended');
+            setTimeout(() => {
+                // console.log('intial Time out');
+                state0();
+            }, 1000);
+        });
+
+        function state0() {
+            //set every child style to default
+            child1.style.fontStyle = 'normal';
+            child2.style.fontStyle = 'normal';
+            child3.style.fontStyle = 'normal';
+            child4.style.fontStyle = 'normal';
+
+            child4.style.fontWeight = 'normal'
+
+            console.log('state 0');
+            setTimeout(() => {
+                // console.log('State 0 Time out');
+                state1();
+            }, interval);
+        }
+
+
+        function state1() {
+            child1.style.fontStyle = 'italic';
+            child2.style.fontStyle = 'normal';
+            child3.style.fontStyle = 'normal';
+            child4.style.fontStyle = 'normal';
+
+            // console.log('state 1');
+            setTimeout(() => {
+                // console.log('State 1 Time out');
+                state2();
+            }, interval);
+        }
+
+
+        function state2() {
+            child1.style.fontStyle = 'normal';
+            child2.style.fontStyle = 'italic';
+
+            // console.log('state 2');
+
+            setTimeout(() => {
+                // console.log('State 2 Time out');
+                state3();
+            }, interval);
+        }
+
+
+        function state3() {
+
+            child2.style.fontStyle = 'italic';
+            child2.style.textDecoration = "underline";
+
+            // console.log('state 3');
+
+            setTimeout(() => {
+                // console.log('State 3 Time out');
+                state4();
+            }, interval);
+        }
+
+
+        function state4() {
+            child2.style.fontStyle = 'normal';
+            child2.style.textDecoration = "none";
+
+            child3.style.fontStyle = 'italic';
+
+
+            // console.log('state 4');
+            setTimeout(() => {
+                // console.log('State 4 Time out');
+                state5();
+            }, interval);
+        }
+
+
+        function state5() {
+            child3.style.fontStyle = 'normal';
+
+            child4.style.fontStyle = 'italic';
+
+            // console.log('state 5');
+
+
+            setTimeout(() => {
+                // console.log('State 5 Time out');
+                state6();
+            }, interval);
+        }
+
+
+        function state6() {
+            child4.style.fontWeight = 'bold'
+
+            // console.log('state 6');
+
+            setTimeout(() => {
+                // console.log('State 6 Time out');
+                state0();
+            }, interval);
+        }
+
+
+        // About us page - paragraph read more action 
+        function showMore(id) {
+            document.getElementById(id + 'Overflow').className = '';
+            document.getElementById(id + 'MoreLink').className = 'hidden';
+            document.getElementById(id + 'LessLink').className = '';
+        }
+
+        function showLess(id) {
+            document.getElementById(id + 'Overflow').className = 'hidden';
+            document.getElementById(id + 'MoreLink').className = '';
+            document.getElementById(id + 'LessLink').className = 'hidden';
+        }
+
+        var len = 335;
+        var shrinkables = document.getElementsByClassName('shrinkable');
+        if (shrinkables.length > 0) {
+            for (var i = 0; i < shrinkables.length; i++) {
+                var fullText = shrinkables[i].innerHTML;
+                if (fullText.length > len) {
+                    var trunc = fullText.substring(0, len).replace(/\w+$/, '');
+                    var remainder = "";
+                    var id = shrinkables[i].id;
+                    remainder = fullText.substring(len, fullText.length);
+                    shrinkables[i].innerHTML = '<span>' + trunc + '<span class="hidden" id="' + id + 'Overflow">' +
+                        remainder + '</span></span>&nbsp;<a class="read-more-link" id="' + id +
+                        'MoreLink" href="#!" onclick="showMore(\'' + id +
+                        '\');"> <br> READ MORE</a><a class="hidden" href="#!" id="' + id +
+                        'LessLink" onclick="showLess(\'' + id + '\');">Less</a>';
+                }
+            }
+        }
+    </script>
+
+</body>

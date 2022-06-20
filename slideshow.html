@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .slideshow-wrapper {
+            width: 445px;
+            height: 536.5px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+        .slideshow-box-1 div,
+        .slideshow-box-2 div {
+            overflow: hidden;
+            object-fit: contain;
+        }
+
+
+        .slideshow-box-1 img,
+        .slideshow-box-2 img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+
+        .slideshow-box-1,
+        .slideshow-box-2 {
+            /* border: 1px solid tomato; */
+            /* width: 50%; */
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        
+        .slideshow-box-1 .slideshow-child-1 {
+            height: 110px;
+            width: 143px;
+        }
+
+        .slideshow-box-1 .slideshow-child-2 {
+            width: 221.65px;
+            height: 168.9px;
+        }
+
+        .slideshow-box-1 .slideshow-child-3 {
+            height: 221.65px;
+            width: 168.9px;
+        }
+
+        .slideshow-box-2 {
+            /* width: 50%; */
+            /* border: 1px solid tomato; */
+            height: 100%;
+            /* margin-left: 16px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .slideshow-box-2 .slideshow-child-4 {
+            width: 206.44px;
+            height: 270.9px;
+            margin-bottom: 9px;
+        }
+
+
+        .slideshow-box-2 .slideshow-child-5 {
+            height: 120.56px;
+            width: 157.77px;
+            margin-top: 9px;
+        }
+
+
+        /* Make it responsive  */
+
+
+        @media screen and (max-width: 768px) {
+
+            * {
+                width: auto;
+                height: auto;
+            }
+
+            .slideshow-wrapper {
+                width: 330px;
+                height: 397.91px;
+            }
+
+            .slideshow-box-1,
+            .slideshow-box-2 {
+                width: 49.2%;
+                border: 1px solid tomato;
+            }
+
+            .slideshow-box-1>*,
+            .slideshow-box-2>* {
+
+
+                filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.08));
+
+
+            }
+
+            .slideshow-box-1 img,
+            .slideshow-box-2 img {
+
+                width: fit-content;
+                object-fit: cover;
+            }
+
+
+            .slideshow-box-1 .slideshow-child-1 {
+                height: 81.59px;
+                width: 106.7px;
+            }
+
+            .slideshow-box-1 .slideshow-child-2 {
+                width: 164.37px;
+                height: 125.25px;
+
+            }
+
+            .slideshow-box-1 .slideshow-child-3 {
+                width: 125.25px;
+                height: 164.37px;
+
+            }
+
+
+
+            .slideshow-box-2 .slideshow-child-4 {
+                height: 200.44px;
+                width: 153.09px;
+                margin-bottom: 7.5px;
+            }
+
+
+            .slideshow-box-2 .slideshow-child-5 {
+
+                width: 117px;
+                height: 89.41px;
+                margin-top: 7.5px;
+
+
+
+            }
+
+
+
+
+
+
+        }
+
+        .slideshow-wrapper-sm {
+            display: flex;
+            width: calc(150px + 117px + 117px);
+            height: calc(153px + 14px + 117px);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slideshow-wrapper-sm>* {
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .slideshow-wrapper-sm .s-box-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slideshow-wrapper-sm .s-box-2 .s-child-3 {
+            width: auto;
+            height: 117px;
+        }
+
+
+
+        .slideshow-wrapper-sm .s-box-1 .s-child-1 {
+            height: 153px;
+            height: 117px;
+        }
+
+        .slideshow-wrapper-sm .s-box-1 .s-child-1 img{
+            width: 100%;
+
+        }
+
+        .slideshow-wrapper-sm .s-box-1 .s-child-2 img{
+            width: 100%;
+
+        }
+
+        .slideshow-wrapper-sm .s-box-2 .s-child-3 img{
+            width: 100%;
+
+        }
+
+        .slideshow-wrapper-sm .s-child-2 {
+            height: 117px;
+            height: 117px;
+        }
+
+
+        .slideshow-wrapper-sm .s-box-3 .s-child-4 {
+            height: 153px;
+            height: 117px;
+        }
+
+        .slideshow-wrapper-sm .s-child-5 {
+            height: 117px;
+            height: 117px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid d-flex">
+        <div class="slideshow-wrapper d-none d-md-flex">
+
+            <div class="slideshow-box-1">
+                <div class="slideshow-child-1 owl-carousel">
+                    <img src="images/Project-Slideshow/Twilight-Touch-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/Twilight-Touch-2.jpg" alt="">
+                    <img src="images/Project-Slideshow/Twilight-Touch-3.jpg" alt="">
+                    <img src="images/Project-Slideshow/Twilight-Touch-4.jpg" alt="">
+                </div>
+
+                <div class="slideshow-child-2 owl-carousel">
+                    <img src="images/Project-Slideshow/acron.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-1.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-2.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-3.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-4.jpg" alt="">
+                </div>
+
+                <div class="slideshow-child-3 owl-carousel">
+                    <img src="images/Project-Slideshow/Bedabeda-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-1.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-2.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-3.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-4.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-5.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-6.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="slideshow-box-2">
+                <div class="slideshow-child-4 owl-carousel">
+                    <img src="images/Project-Slideshow/sea-moss-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-1-crop.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-2-crop.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-3-crop.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-4.jpg" alt="">
+                </div>
+
+
+                <div class="slideshow-child-5 owl-carousel">
+                    <img src="images/Project-Slideshow/BagelsnBrownies-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/BagelsnBrownies-1.jpg" alt="">
+                    <img src="images/Project-Slideshow/BagelsnBrownies-2.jpg" alt="">
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    
+
+        <div class="slideshow-wrapper-sm d-md-none ">
+            <div class="s-box-1">
+                <div class="s-child-1 slideshow-child-1 owl-carousel">
+                    <img src="images/Project-Slideshow/sea-moss-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-1-crop.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-2-crop.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-3-crop.jpg" alt="">
+                    <img src="images/Project-Slideshow/sea-moss-4.jpg" alt="">
+                </div>
+
+                <div class="s-child-2 slideshow-child-2 owl-carousel">
+
+                    <img src="images/Project-Slideshow/BagelsnBrownies-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/BagelsnBrownies-1.jpg" alt="">
+                    <img src="images/Project-Slideshow/BagelsnBrownies-2.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="s-box-2">
+                <div class="s-child-3 slideshow-child-3 owl-carousel">
+                    <img src="images/Project-Slideshow/acron.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-1.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-2.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-3.jpg" alt="">
+                    <img src="images/Project-Slideshow/acron-4.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="s-box-3">
+                <div class="s-child-4 slideshow-child-4 owl-carousel">
+                    <img src="images/Project-Slideshow/Bedabeda-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-1.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-2.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-3.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-4.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-5.jpg" alt="">
+                    <img src="images/Project-Slideshow/Bedabeda-6.jpg" alt="">
+                </div>
+
+                <div class="s-child-5 slideshow-child-5 owl-carousel">
+                    <img src="images/Project-Slideshow/Twilight-Touch-main.jpg" alt="">
+                    <img src="images/Project-Slideshow/Twilight-Touch-2.jpg" alt="">
+                    <img src="images/Project-Slideshow/Twilight-Touch-3.jpg" alt="">
+                    <img src="images/Project-Slideshow/Twilight-Touch-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('.slideshow-child-1').owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+        $('.slideshow-child-2').owlCarousel({
+            loop: true,
+            nav: false,
+            rtl: true,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+        $('.slideshow-child-3').owlCarousel({
+            loop: true,
+            nav: false,
+            rtl: true,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 5500,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+
+        $('.slideshow-child-4').owlCarousel({
+            loop: true,
+            nav: false,
+            rtl: true,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 5800,
+            margin: 0,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+        $('.slideshow-child-5').owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 6200,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

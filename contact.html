@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+
+
+
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+
+
+    <!-- Rezon stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .highlight {
+            background-repeat: no-repeat;
+            display: inline;
+            padding: 0px 6px;
+            animation: textbg normal forwards;
+            animation-delay: 800ms;
+            animation-duration: 900ms;
+            transition: 0.5s cubic-bezier(1, 0.16, 0.34, 0.74);
+        }
+
+        @keyframes textbg {
+            from {
+                color: #21383E;
+                background-size: 0;
+                background-image: linear-gradient(transparent calc(0% - 0px), #21383E 0px);
+                /* background-image: linear-gradient(transparent calc(0% - 0px), #21383E 100px); */
+                /* background-color: #07c400; */
+            }
+
+            to {
+                color: #ffff;
+                background-size: 100%;
+                background-image: linear-gradient(transparent calc(0% - 5px), #21383E 0px);
+                /* background-color: #ebcd4b; */
+            }
+        }
+
+        @keyframes text-white {
+            from {
+                color: #21383E;
+            }
+
+            to {
+                color: #ffff;
+                /* background-color: #ebcd4b; */
+            }
+
+        }
+    </style>
+
+    
+<!-- Script  -->
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="cnt">
+
+        <!-- navbar  -->
+        <div class="nav-sm">
+            <!-- <div class="logo">
+              MUHAMMAD
+              <span> SHAHBAZ </span>
+            </div> -->
+  
+            <div class="logo d-md-none d-block">
+                <img src="images/Logo-84px.png" alt="">
+                <!-- <img src="images/Group.png" alt=""> -->
+            </div>
+  
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="#">Work</a>
+                    <a href="#">About</a>
+                    <a href="">
+                        <div class="btn-box">
+                            <button class="contact-btn" type="submit">
+                                CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                    data-height="20"></span>
+                            </button>
+                        </div>
+                    </a>
+  
+                    <div class="social-icons">
+                        <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+                        <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+                        <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                    </div>
+  
+                </div>
+            </div>
+            <span style="font-size:34px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+
+
+
+
+
+
+        <nav class="d-flex justify-content-between ">
+
+            <!-- #issue-1 
+          Check this on different screen size,
+        working fine on chrome - tab screen  -->
+
+            <div class="logo d-md-block d-none">
+                <img src="images/Logo-84px.png" alt="">
+                <!-- <img src="images/Group.png" alt=""> -->
+            </div>
+
+
+            <!-- for mobile screens  -->
+            <div class="logo d-none">
+                <!-- <img src="images/Logo-1.png" alt=""> -->
+                <img src="images/Logo.svg" alt="">
+            </div>
+
+            <div class="menu ">
+                <ul class="navbar nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <button> Contact us <span class="iconify"
+                                    data-icon="akar-icons:arrow-right" data-width="20" data-height="20"></span>
+                            </button></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="contact-heading cnt">
+        <div class="row">
+            <div class="col-xl-6 col-8 mx-auto text-center">
+                <h1>It’s your turn now</h1>
+                <p>
+                    Drop us a line, tell us about your project, or ask your questions. We’ll get back to you shortly.
+                    See you there!
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-page contact-section">
+        <div class="cnt">
+
+
+            <form action="">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <label for="">
+                            First Name
+                        </label>
+                        <input type="text" name="" id="" placeholder="Rahul">
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <label for="">
+                            Last Name
+                        </label>
+                        <input type="text" name="" id="" placeholder="Sharma">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <label for="">
+                            Email
+                        </label>
+                        <input type="text" name="" id="" placeholder="Your email address">
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 d-none d-md-block">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8 col-12">
+                        <label for="">
+                            Tell us about your business and what you’re looking for help with. *
+                        </label>
+                        <input type="text" name="" id=""
+                            placeholder="Explain briefly about your bussiness, industry and problems you facing.">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <label for="">
+                            How did you find Rezon Studio?
+                        </label>
+                        <input type="text" name="" id="" placeholder="Social media, website, word of mouth etc.">
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 d-none d-md-block">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="btn-box text-center">
+                        <button class="contact-btn" type="submit">
+                            SEND <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                data-height="20"></span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </form>
+
+            <div class="after-button-msg row ">
+
+                <p class="col text-center">
+                    We’ll send you an email reply within a day with some questions to get both of us started.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="wrapper">
+
+            <div class="cnt d-flex text-white">
+
+                <div class="footer-logo-box col-* col-md-4 col-xl-3">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="">
+                    </div>
+
+                    <div class="contact-us-box d-md-none">
+                        <div class="contact-text">
+                            <p> Any Project? Reach out to our team at hello@rezon.com</p>
+                        </div>
+
+                        <div class="btn-box">
+                            <button class="contact-btn" type="submit">
+                                CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                    data-height="20"></span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="social-icons d-xl-none">
+                        <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+                        <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+                        <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                    </div>
+
+
+                </div>
+
+                <div class="footer-nav col-6 col-md-4 col-xl-3 text-white">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!-- <li>Work</li> -->
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact d-none d-md-block col-md-4 col-xl-3 text-white">
+                    <div class="contact-us-box">
+                        <div class="contact-text">
+                            <p> Any Project? Reach out to our team at hello@rezon.com</p>
+                        </div>
+
+                        <div class="btn-box">
+                            <button class="contact-btn" type="submit">
+                                CONTACT US <span class="iconify" data-icon="akar-icons:arrow-right" data-width="20"
+                                    data-height="20"></span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-social d-none d-xl-block col-xl-3 d-none text-white">
+                    <div class="social-text"> Follow us to get daily dose of inpiration and strategies to grow and
+                        amplify your
+                        brand.</div>
+                    <div class="social-icons">
+                        <a href=""><span class="iconify" data-icon="foundation:social-behance"></span></a>
+                        <a href=""><span class="iconify" data-icon="bx:bxl-instagram-alt"></span></a>
+                        <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright cnt row">
+                <div class="col-12">
+                    <div class="text-center">
+                        © 2021 Rezon Studio. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
